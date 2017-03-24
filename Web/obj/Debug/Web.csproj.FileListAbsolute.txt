@@ -50,3 +50,7 @@ c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\bin\zh-Hans\System.Web.Mvc.resources.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\obj\Debug\Web.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\obj\Debug\Web.pdb
+c:\Users\Administrator.SC-201703152226\Documents\Visual Studio 2017\Projects\OA\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+c:\Users\Administrator.SC-201703152226\Documents\Visual Studio 2017\Projects\OA\Web\bin\Model.dll
+c:\Users\Administrator.SC-201703152226\Documents\Visual Studio 2017\Projects\OA\Web\bin\Model.pdb
+c:\Users\Administrator.SC-201703152226\Documents\Visual Studio 2017\Projects\OA\Web\bin\Model.dll.config

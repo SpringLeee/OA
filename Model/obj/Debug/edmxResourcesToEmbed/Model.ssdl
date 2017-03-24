@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nickname" Type="nvarchar" MaxLength="20" />
+    <Property Name="pwd" Type="nvarchar" MaxLength="50" />
+    <Property Name="sex" Type="int" />
+    <Property Name="birthday" Type="datetime" />
+    <Property Name="address" Type="nvarchar" MaxLength="20" />
+    <Property Name="email" Type="nvarchar" MaxLength="30" />
+    <Property Name="mylike" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="10" />
+    <Property Name="gay" Type="nvarchar" MaxLength="10" />
+    <Property Name="love" Type="nvarchar" MaxLength="10" />
+    <Property Name="blood" Type="nvarchar" MaxLength="10" />
+    <Property Name="blog" Type="nvarchar" MaxLength="20" />
+    <Property Name="myself" Type="nvarchar" MaxLength="50" />
+    <Property Name="qq" Type="nvarchar" MaxLength="20" />
+    <Property Name="msn" Type="nvarchar" MaxLength="20" />
+    <Property Name="state" Type="nvarchar" MaxLength="50" />
+    <Property Name="face" Type="nvarchar" MaxLength="50" />
+    <Property Name="time" Type="datetime" />
+  </EntityType>
+  <EntityType Name="weibo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="text" Type="text" />
+    <Property Name="images" Type="text" />
+    <Property Name="sendman" Type="int" />
+    <Property Name="sendtime" Type="datetime" />
+    <Property Name="transpond" Type="int" />
+    <Property Name="remark" Type="int" />
+    <Property Name="nice" Type="int" />
+  </EntityType>
+  <EntityContainer Name="DbModelStoreContainer">
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="weibo" EntityType="Self.weibo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

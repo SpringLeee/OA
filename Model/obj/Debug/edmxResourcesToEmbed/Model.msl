@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbModelStoreContainer" CdmEntityContainer="DBConnection">
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="DbModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="mylike" ColumnName="mylike" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gay" ColumnName="gay" />
+          <ScalarProperty Name="love" ColumnName="love" />
+          <ScalarProperty Name="blood" ColumnName="blood" />
+          <ScalarProperty Name="blog" ColumnName="blog" />
+          <ScalarProperty Name="myself" ColumnName="myself" />
+          <ScalarProperty Name="qq" ColumnName="qq" />
+          <ScalarProperty Name="msn" ColumnName="msn" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="face" ColumnName="face" />
+          <ScalarProperty Name="time" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="weibo">
+      <EntityTypeMapping TypeName="DbModel.weibo">
+        <MappingFragment StoreEntitySet="weibo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="images" ColumnName="images" />
+          <ScalarProperty Name="sendman" ColumnName="sendman" />
+          <ScalarProperty Name="sendtime" ColumnName="sendtime" />
+          <ScalarProperty Name="transpond" ColumnName="transpond" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="nice" ColumnName="nice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

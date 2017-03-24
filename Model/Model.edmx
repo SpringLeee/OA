@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="nickname" Type="nvarchar" MaxLength="20" />
+          <Property Name="pwd" Type="nvarchar" MaxLength="50" />
+          <Property Name="sex" Type="int" />
+          <Property Name="birthday" Type="datetime" />
+          <Property Name="address" Type="nvarchar" MaxLength="20" />
+          <Property Name="email" Type="nvarchar" MaxLength="30" />
+          <Property Name="mylike" Type="nvarchar" MaxLength="50" />
+          <Property Name="name" Type="nvarchar" MaxLength="10" />
+          <Property Name="gay" Type="nvarchar" MaxLength="10" />
+          <Property Name="love" Type="nvarchar" MaxLength="10" />
+          <Property Name="blood" Type="nvarchar" MaxLength="10" />
+          <Property Name="blog" Type="nvarchar" MaxLength="20" />
+          <Property Name="myself" Type="nvarchar" MaxLength="50" />
+          <Property Name="qq" Type="nvarchar" MaxLength="20" />
+          <Property Name="msn" Type="nvarchar" MaxLength="20" />
+          <Property Name="state" Type="nvarchar" MaxLength="50" />
+          <Property Name="face" Type="nvarchar" MaxLength="50" />
+          <Property Name="time" Type="datetime" />
+        </EntityType>
+        <EntityType Name="weibo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="text" Type="text" />
+          <Property Name="images" Type="text" />
+          <Property Name="sendman" Type="int" />
+          <Property Name="sendtime" Type="datetime" />
+          <Property Name="transpond" Type="int" />
+          <Property Name="remark" Type="int" />
+          <Property Name="nice" Type="int" />
+        </EntityType>
+        <EntityContainer Name="DbModelStoreContainer">
+          <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="weibo" EntityType="Self.weibo" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nickname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="pwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="sex" Type="Int32" />
+          <Property Name="birthday" Type="DateTime" Precision="3" />
+          <Property Name="address" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="mylike" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="gay" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="love" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="blood" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="blog" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="myself" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="qq" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="msn" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="face" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="time" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="weibo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="images" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="sendman" Type="Int32" />
+          <Property Name="sendtime" Type="DateTime" Precision="3" />
+          <Property Name="transpond" Type="Int32" />
+          <Property Name="remark" Type="Int32" />
+          <Property Name="nice" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="DBConnection" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="user" EntityType="Self.user" />
+          <EntitySet Name="weibo" EntityType="Self.weibo" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DbModelStoreContainer" CdmEntityContainer="DBConnection">
+          <EntitySetMapping Name="user">
+            <EntityTypeMapping TypeName="DbModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nickname" ColumnName="nickname" />
+                <ScalarProperty Name="pwd" ColumnName="pwd" />
+                <ScalarProperty Name="sex" ColumnName="sex" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="mylike" ColumnName="mylike" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="gay" ColumnName="gay" />
+                <ScalarProperty Name="love" ColumnName="love" />
+                <ScalarProperty Name="blood" ColumnName="blood" />
+                <ScalarProperty Name="blog" ColumnName="blog" />
+                <ScalarProperty Name="myself" ColumnName="myself" />
+                <ScalarProperty Name="qq" ColumnName="qq" />
+                <ScalarProperty Name="msn" ColumnName="msn" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="face" ColumnName="face" />
+                <ScalarProperty Name="time" ColumnName="time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="weibo">
+            <EntityTypeMapping TypeName="DbModel.weibo">
+              <MappingFragment StoreEntitySet="weibo">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="images" ColumnName="images" />
+                <ScalarProperty Name="sendman" ColumnName="sendman" />
+                <ScalarProperty Name="sendtime" ColumnName="sendtime" />
+                <ScalarProperty Name="transpond" ColumnName="transpond" />
+                <ScalarProperty Name="remark" ColumnName="remark" />
+                <ScalarProperty Name="nice" ColumnName="nice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
