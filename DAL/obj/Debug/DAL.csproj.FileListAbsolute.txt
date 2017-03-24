@@ -1,5 +1,4 @@
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\DAL\bin\Debug\DAL.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\DAL\bin\Debug\DAL.pdb
-c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\DAL\obj\Debug\DAL.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\DAL\obj\Debug\DAL.pdb

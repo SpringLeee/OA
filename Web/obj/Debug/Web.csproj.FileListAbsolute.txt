@@ -48,6 +48,5 @@ c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\bin\zh-Hans\System.Web.Webpages.Razor.resources.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\bin\zh-Hans\System.Web.Helpers.resources.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\bin\zh-Hans\System.Web.Mvc.resources.dll
-c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\obj\Debug\Web.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Web\obj\Debug\Web.pdb
