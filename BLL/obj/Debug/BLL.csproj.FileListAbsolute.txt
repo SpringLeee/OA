@@ -1,0 +1,5 @@
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\BLL\bin\Debug\BLL.dll
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\BLL\bin\Debug\BLL.pdb
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\BLL\obj\Debug\BLL.dll
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,5 @@
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\bin\Debug\Common.dll
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\bin\Debug\Common.pdb
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\obj\Debug\Common.dll
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\obj\Debug\Common.pdb

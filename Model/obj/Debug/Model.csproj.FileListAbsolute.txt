@@ -1,0 +1,5 @@
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Model\bin\Debug\Model.dll
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Model\bin\Debug\Model.pdb
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Model\obj\Debug\Model.dll
+c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Model\obj\Debug\Model.pdb
