@@ -2,3 +2,4 @@ c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\bin\Debug\Common.pdb
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\obj\Debug\Common.dll
 c:\users\administrator.sc-201703152226\documents\visual studio 2017\Projects\OA\Common\obj\Debug\Common.pdb
+c:\Users\Administrator.SC-201703152226\Documents\Visual Studio 2017\Projects\OA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
